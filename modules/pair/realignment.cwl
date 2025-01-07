@@ -145,7 +145,7 @@ steps:
                 valueFrom: ${ return inputs.input_file.basename.replace(".list", ".bed"); }
         out: [output_file]
     abra:
-        run: ../../tools/abra/2.17/abra.cwl
+        run: ../../tools/abra/2.23/abra.cwl
         in:
             abra_ram_min: abra_ram_min
             in: bams
